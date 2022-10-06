@@ -153,8 +153,11 @@ DD系统：https://www.cxthhhhh.com/network-reinstall-system-modify
 
 爱发电：
 
-## 交流群
-[Telegram](https://t.me/misakanetcn)
+## 频道及交流群
+
+[Telegram 频道](https://t.me/misakablogchannel)
+
+[Telegram 群组](https://t.me/+CLhpemKhaC8wZGIx)
 
 ## License
 GNU General Public License v3.0  
