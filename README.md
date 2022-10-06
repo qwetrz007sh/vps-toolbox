@@ -30,10 +30,14 @@ bash MisakaToolbox.sh
 
 ## 来自姐姐大人的更新日志
 
-Ver 3.0 重构工具箱菜单、原功能不变
+Ver 3.2 闭关回归，脚本地址迁移，删除部分脚本
 
 <details>
     <summary>历史更新记录（点击展开）</summary>
+
+Ver 3.1 Fedora 系统支持
+
+Ver 3.0 重构工具箱菜单、原功能不变
     
 Ver 2.1.9 新增Misaka魔改版X-ui脚本
 
