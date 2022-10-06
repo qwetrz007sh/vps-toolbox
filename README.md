@@ -1,92 +1,155 @@
-# vpstools
+# 御坂妹妹们的Linux VPS工具箱
 
+为了方便妹妹们更好的管理他们的服务器，姐姐大人为您们写好了一键管理脚本了
 
+虽然目前我给你们一键管理的功能并不多，但是我有时间还是给你们准备的啦！
 
-## Getting started
+![image.png](https://s2.loli.net/2021/12/26/WkiwbdExvnGAXCh.png)
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 使用方法
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+1. 给这个项目一个Star 
+2. 用SSH客户端连接上VPS，输入以下命令（若不是root用户请先`sudo -i`提权）
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/misakablog/vpstools.git
-git branch -M main
-git push -uf origin main
+```shell
+wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/MisakaLinuxToolbox/master/MisakaToolbox.sh && bash MisakaToolbox.sh
 ```
 
-## Integrate with your tools
+第一次运行以后，可用快捷方式启动
+```bash
+bash MisakaToolbox.sh
+```
 
-- [ ] [Set up project integrations](https://gitlab.com/misakablog/vpstools/-/settings/integrations)
+## 工具箱功能提议
 
-## Collaborate with your team
+想要工具箱添加新的功能？有以下两种方式可以选择：
+1. 自行修改代码后提交 [Pull Request](https://github.com/Misaka-blog/MisakaLinuxToolbox/pulls)
+2. 提交一个 [Discussion](https://github.com/Misaka-blog/MisakaLinuxToolbox/discussions/20)  
+开发者们看到后会尽快添加~
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+## 来自姐姐大人的更新日志
 
-## Test and Deploy
+Ver 3.0 重构工具箱菜单、原功能不变
 
-Use the built-in continuous integration in GitLab.
+<details>
+    <summary>历史更新记录（点击展开）</summary>
+    
+Ver 2.1.9 新增Misaka魔改版X-ui脚本
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Ver 2.1.8 新增设置中文语言选项和一键换源脚本
+    
+Ver 2.1.7 WARP处新增Misaka-WARP脚本
 
-***
+Ver 2.1.6 新增Ngrok脚本
 
-# Editing this README
+Ver 2.1.5 新增放开VPS所有网络端口选项
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+Ver 2.1.4 修改更新源为GitLab以规避GitHub无故封号
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Ver 2.1.3 由于网络跳跃跑路，故将他的脚本替代为Misaka-blog的修复版
 
-## Name
-Choose a self-explaining name for your project.
+Ver 2.1.2 增加CloudFlare Argo Tunnel一键脚本
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Ver 2.1.1 增加misakabench测试脚本
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Ver 2.1.0 2022新年快乐！增加V2ray.Fun面板，集成修改root+密码脚本
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+Ver 2.0.9 增加Trojan面板，fscarmen的warp流媒体解锁脚本
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Ver 2.0.8 增加青龙面板，修复纯净Debian系统获取不到VPS IP地址的问题
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+Ver 2.0.7 增加脚本运行次数统计，fscarmen的warp docker版脚本
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Ver 2.0.6 增加DD系统选项（选项仅在KVM VPS显示）
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Ver 2.0.5 添加不同作者的WARP脚本，给予用户更多选择。增加德鸡DiG9网络解决方案
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Ver 2.0.4 增加安装ShadowSocks脚本，BBR支持IBM LinuxONE
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Ver 2.0.3.1 解决修复OpenVZ的BBR，TUN模块判断问题
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Ver 2.0.3 优化系统判断机制，增加本博客的Acme.sh证书申请脚本
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+Ver 2.0.2 删除宝塔开心版脚本，优化BBR判断规则
+
+Ver 2.0.1 新增一些VPS测试脚本
+
+Ver 2.0 重构脚本，详细内容可看Github项目的思维导图
+
+Ver 1.4.5 新增禁用Oracle系统自带防火墙、Acme.sh和Screen后台任务管理脚本
+
+Ver 1.4.4 在主菜单提示VPS信息，并新增部署Telegram MTProxy脚本
+
+Ver 1.4.3 更新hijk大佬的v2脚本，支持IBM LinuxONE s390x的机器搭建节点
+
+Ver 1.4.2 更新脚本，修复jsdelivr无法解析问题
+
+Ver 1.4.1 关于加了探针却没加到菜单的一个小bug的修复
+
+Ver 1.4: 添加修改主机名，以及修改一些小问题
+
+Ver 1.3: 添加可乐的ServerStatus-Horatu探针管理及客户端
+
+Ver 1.2: 添加流媒体检测，三网测速脚本
+
+Ver 1.1: 添加BBR及宝塔开心版、Docker安装脚本
+</details>
+
+## 感谢列表
+
+感谢他们的贡献，让脚本得到进一步完善
+<details>
+    <summary>点击展开</summary>
+
+BBR(KVM)：https://github.com/ylx2016/Linux-NetSpeed
+
+BBR(OpenVZ)：https://github.com/mzz2017/lkl-haproxy/
+
+WARP脚本：https://github.com/fscarmen/warp
+
+宝塔国际版（aapanel）：https://www.aapanel.com/
+
+X-ui: https://github.com/vaxilu/x-ui
+
+Aria2: https://github.com/P3TERX/aria2.sh
+
+CyberPanel：https://cyberpanel.net/
+
+Mack-a：https://github.com/mack-a/v2ray-agent
+
+233boy：https://github.com/233boy/v2ray/wiki/V2Ray%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC
+
+hijk：https://github.com/hijkpw/scripts
+
+ShadowSocks: https://github.com/teddysun/shadowsocks_install/tree/master
+
+bench.sh https://bench.sh
+
+superbench https://github.com/oooldking/script
+
+lemonbench https://blog.ilemonrain.com/linux/LemonBench.html
+
+流媒体检测：https://github.com/lmc999/RegionRestrictionCheck
+
+三网测速：https://github.com/ernisn/superspeed/
+
+哪吒面板：https://github.com/naiba/nezha
+
+可乐 ServerStartus-Horatu：https://github.com/cokemine/ServerStatus-Hotaru
+
+DD系统：https://www.cxthhhhh.com/network-reinstall-system-modify
+
+青龙面板：https://github.com/whyour/qinglong
+
+更换系统语言：https://github.com/johnrosen1/vpstoolbox
+</details>  
+
+## 赞助我们
+
+爱发电：
+
+## 交流群
+[Telegram](https://t.me/misakanetcn)
 
 ## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+GNU General Public License v3.0  
