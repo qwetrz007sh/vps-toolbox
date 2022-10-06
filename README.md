@@ -16,6 +16,7 @@ wget -N --no-check-certificate https://raw.githubusercontents.com/Misaka-blog/Mi
 ```
 
 第一次运行以后，可用快捷方式启动
+
 ```bash
 bash MisakaToolbox.sh
 ```
@@ -23,8 +24,8 @@ bash MisakaToolbox.sh
 ## 工具箱功能提议
 
 想要工具箱添加新的功能？有以下两种方式可以选择：
-1. 自行修改代码后提交 [Pull Request](https://github.com/Misaka-blog/MisakaLinuxToolbox/pulls)
-2. 提交一个 [Discussion](https://github.com/Misaka-blog/MisakaLinuxToolbox/discussions/20)  
+1. 自行修改代码后提交 [Merge Request](https://gitlab.com/misakablog/vps-toolbox/-/merge_requests)
+2. 提交一个 [Issues](https://gitlab.com/misakablog/vps-toolbox/-/issues)
 开发者们看到后会尽快添加~
 
 ## 来自姐姐大人的更新日志
