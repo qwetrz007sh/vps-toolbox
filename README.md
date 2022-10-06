@@ -151,7 +151,7 @@ DD系统：https://www.cxthhhhh.com/network-reinstall-system-modify
 
 ## 赞助我们
 
-爱发电：
+爱发电：https://afdian.net/a/misaka-blog
 
 ## 频道及交流群
 
@@ -160,4 +160,4 @@ DD系统：https://www.cxthhhhh.com/network-reinstall-system-modify
 [Telegram 群组](https://t.me/+CLhpemKhaC8wZGIx)
 
 ## License
-GNU General Public License v3.0  
+GNU Affero General Public License v3.0
