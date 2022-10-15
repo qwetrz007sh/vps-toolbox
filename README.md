@@ -12,7 +12,7 @@
 2. 用SSH客户端连接上VPS，输入以下命令（若不是root用户请先`sudo -i`提权）
 
 ```shell
-wget -N --no-check-certificate https://gitlab.com/misakablog/vps-toolbox/-/raw/main/MisakaToolbox.sh && bash MisakaToolbox.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/blog-misaka/vps-toolbox/main/MisakaToolbox.sh && bash MisakaToolbox.sh
 ```
 
 第一次运行以后，可用快捷方式启动
